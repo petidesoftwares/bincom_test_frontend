@@ -10,7 +10,7 @@ function getStates() {
     $.get(appUrl+'api/states', function (data, status){
         for(let i = 0; i<data.States.length; i++){
             stateId = data.States[i].state_id;
-            $("#state-list").append("<li onclick='getLgaByState("+stateId+")'>"+ data.States[i].state_name+"</li>");
+            $("#state-list").append("<li class='li' onclick='getLgaByState("+stateId+")'>"+ data.States[i].state_name+"</li>");
         }
     })
 }
@@ -24,19 +24,20 @@ function getLgaByState(){
         }else{
             for(let i = 0; i<data.lgas.length; i++){
                 lgaId = data.lgas[i].lga_id;
-                $("#lga-list").append("<li onclick='getWardsByLga()'>"+ data.lgas[i].lga_name+"</li>");
+                console.log(lgaId);
+                $("#lga-list").append("<li class='li' onclick='getWardsByLga("+lgaId+")'>"+ data.lgas[i].lga_name+"</li>");
             }
         }
     })
 }
-function getWardsByLga(){
+function getWardsByLga(lgaId){
     alert("dfghj");
     $("#ward-list").html("");
     var wardId =0;
     $.get(appUrl+'api/lga/wards/'+lgaID, function (data, status){
         for(let i = 0; i<data.wards.length; i++){
             wardId = data.wards[i].ward_id;
-            $("#ward-list").append("<li onclick='getPollingUnits("+wardId+")'>"+ data.wards[i].ward_name+"</li>");
+            $("#ward-list").append("<li class='li' onclick='getPollingUnits("+wardId+")'>"+ data.wards[i].ward_name+"</li>");
         }
     })
 }
