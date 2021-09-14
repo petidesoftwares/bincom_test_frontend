@@ -25,13 +25,13 @@ function getLgaByState(){
         }else{
             for(let i = 0; i<data.lgas.length; i++){
                 lgaId = data.lgas[i].lga_id;
-                $("#lga-list").append("<li onclick='getWardsByLga("+lgaId+")'>"+ data.lgas[i].lga_name+"</li>");
+                $("#lga-list").append("<li onclick='getWardsByLga()'>"+ data.lgas[i].lga_name+"</li>");
             }
         }
     })
 }
 function getWardsByLga(lgaID){
-    alert(lgaID);
+    alert("dfghj");
     $("#ward-list").html("");
     var wardId =0;
     $.get(appUrl+'api/lga/wards/'+lgaID, function (data, status){
