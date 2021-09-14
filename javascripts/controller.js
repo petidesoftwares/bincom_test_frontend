@@ -1,4 +1,4 @@
-
+const appUrl = "https://idepeter-bincom.herokuapp.com/";
 $(document).ready(function (){
     // getStates();
     getLgaByState();
@@ -8,7 +8,7 @@ $(document).ready(function (){
 
 function getStates() {
     var stateId =0;
-    $.get('http://127.0.0.1:8000/api/states', function (data, status){
+    $.get(appUrl+'api/states', function (data, status){
         for(let i = 0; i<data.States.length; i++){
             stateId = data.States[i].state_id;
             $("#state-list").append("<li onclick='getLgaByState("+stateId+")'>"+ data.States[i].state_name+"</li>");
@@ -19,7 +19,7 @@ function getLgaByState(){
 //     window.location.href = "views/lga.php?id=1";
     $("#lga-list").html("");
     var lgaId =0;
-    $.get('http://127.0.0.1:8000/api/lgas/25', function (data, status){
+    $.get(appUrl+'api/lgas/25', function (data, status){
         if(data.lgas.length==0){
             alert("Only Delta State is Available. thanks");
         }else{
@@ -33,7 +33,7 @@ function getLgaByState(){
 function getWardsByLga(lgaID){
     $("#ward-list").html("");
     var wardId =0;
-    $.get('http://127.0.0.1:8000/api/lga/wards/'+lgaID, function (data, status){
+    $.get(appUrl+'api/lga/wards/'+lgaID, function (data, status){
         for(let i = 0; i<data.wards.length; i++){
             wardId = data.wards[i].ward_id;
             $("#ward-list").append("<li onclick='getPollingUnits("+wardId+")'>"+ data.wards[i].ward_name+"</li>");
@@ -44,7 +44,7 @@ function getWardsByLga(lgaID){
 function getPollingUnits(wardID){
     $("#poll-list").html("");
     var unitId =0;
-    $.get('http://127.0.0.1:8000/api/wards/pulling-units/'+wardID, function (data, status){
+    $.get(appUrl+'api/wards/pulling-units/'+wardID, function (data, status){
         for(let i = 0; i<data.units.length; i++){
             unitId = data.units[i].uniqueid;
             $("#poll-list").append("<li onclick='getUnitResult("+unitId+")'>"+ data.units[i].polling_unit_name+"</li>");
@@ -56,7 +56,7 @@ function getUnitResult(unitId){
     $("#result-body").html("");
     alert (unitId);
     var wardId =0;
-    $.get('http://127.0.0.1:8000/api/unit/result/'+unitId, function (data, status){
+    $.get(appUrl+'api/unit/result/'+unitId, function (data, status){
         if (data.result.length == 0){
             alert("Result not Ready");
         }else{

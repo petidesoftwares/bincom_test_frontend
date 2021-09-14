@@ -1,7 +1,9 @@
+
+const appUrl = "https://idepeter-bincom.herokuapp.com/";
 const indexArray =[];
 $(document).ready(function (){
     // const namesArray = [];
-    $.get('http://127.0.0.1:8000/api/parties',function (data, status){
+    $.get(appUrl+'api/parties',function (data, status){
         for(let i=0; i<data.parties.length; i++){
             indexArray[i] = data.parties[i].partyname;
             $("#upload-form").append("<label>"+data.parties[i].partyname+":</label><input type='text' id='"+data.parties[i].partyname+"' /><br>")
@@ -27,7 +29,7 @@ function uploadResult(){
             indexArray[i] = "LAB"
         }
     }
-    $.post('http://127.0.0.1:8000/api/upload-result',{unitNumber:unitNumber,agentName:agentName,dataKey:indexArray,result:dataArray}, function (data){
+    $.post(appUrl+'api/upload-result',{unitNumber:unitNumber,agentName:agentName,dataKey:indexArray,result:dataArray}, function (data){
         alert(data.message);
     })
 }
