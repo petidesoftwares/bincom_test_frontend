@@ -6,7 +6,7 @@
     <body>
         <div id="upload-form">
             <label>Unit Number:</label><input type="text" id="polling-unit-num"><br>
-            <label>Enter By:</label><input type="text", id="agent-name">
+            <label>Enter By:</label><input type="text", id="agent-name"><br>
 
         </div>
     </body>
