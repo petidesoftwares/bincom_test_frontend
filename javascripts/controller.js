@@ -30,7 +30,7 @@ function getLgaByState(){
         }
     })
 }
-function getWardsByLga(lgaID){
+function getWardsByLga(){
     alert("dfghj");
     $("#ward-list").html("");
     var wardId =0;

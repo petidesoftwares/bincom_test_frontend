@@ -1,5 +1,6 @@
 <html>
 <head>
+    <link href="css/bincomcss.css">
     <script src="javascripts/jquery.js"></script>
     <script src="javascripts/controller.js"></script>
 </head>
