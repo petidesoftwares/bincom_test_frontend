@@ -31,6 +31,7 @@ function getLgaByState(){
     })
 }
 function getWardsByLga(lgaID){
+    alert(lgaID);
     $("#ward-list").html("");
     var wardId =0;
     $.get(appUrl+'api/lga/wards/'+lgaID, function (data, status){
