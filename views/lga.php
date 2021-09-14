@@ -6,7 +6,11 @@
     </head>
     <body>
         <div>
-            <div id="lga-by-state"></div>
+            <div>
+                <select id="lga-by-state" onchange="getResult()">
+                    <option>Select LGA</option>
+                </select>
+            </div>
         </div>
         <div id="result-table">
             <table>
