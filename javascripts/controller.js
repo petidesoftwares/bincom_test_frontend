@@ -2,7 +2,6 @@ const appUrl = "https://idepeter-bincom.herokuapp.com/";
 $(document).ready(function (){
     // getStates();
     getLgaByState();
-    // getAllLgasForResult();
 })
 
 
