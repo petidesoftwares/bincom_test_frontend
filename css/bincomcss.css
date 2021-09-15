@@ -3,6 +3,10 @@ body{
     padding: 0px;
     background-color: darkslategray;
 }
+h2{
+    text-align: center;
+    color: white;
+}
 .li{
     list-style: none;
     font-size: x-large;
@@ -14,18 +18,29 @@ body{
 a{
     text-decoration: none;
     text-underline: none;
-    color: white;
+    color: darkblue;
 }
 a:visited{
     color: white;
 }
 .card{
-    width: 80%;
-    height: 500px;
-    margin-left: 9%;
+    width: 70%;
+    height: 250px;
+    margin-left: 14%;
+    margin-top: 3%;
+    margin-top: 2%;
     padding: 2%;
-    background-color: antiquewhite;
-    border: solid 1px antiquewhite;
+    background-color: white;
+    border: solid 1px white;
+}
+.card-fluid{
+    width: 70%;
+    margin-left: 14%;
+    margin-top: 3%;
+    margin-top: 2%;
+    padding: 2%;
+    background-color: white;
+    border: solid 1px white;
 }
 table{
     border-collapse: collapse;

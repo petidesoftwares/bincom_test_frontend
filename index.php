@@ -6,7 +6,7 @@
 </head>
 <body>
 <h2>BINCOM TEST</h2>
-<div class="card">
+<div class="card-fluid">
     <span class="span-link"><a href="views/lga.php">View LGA Result</a></span><br>
     <span class="span-link"><a href="views/upload-poll-result.php">Upload Unit Result</a></span><br>
 </div>
@@ -26,7 +26,7 @@
     <h4>Polling Units in </h4>
     <ul id="poll-list"></ul>
 </div>
-<div class="card" id = "result">
+<div class="card-fluid" id = "result">
     <h4>Result For Units in </h4>
     <div id="result-pane">
         <table>
