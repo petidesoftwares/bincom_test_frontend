@@ -5,7 +5,7 @@ $(document).ready(function (){
     $.get(appUrl+'api/parties',function (data, status){
         for(let i=0; i<data.parties.length; i++){
             indexArray[i] = data.parties[i].partyname;
-            $("#upload-form").append("<label>"+data.parties[i].partyname+":</label><input type='text' id='"+data.parties[i].partyname+"' /><br>")
+            $("#upload-form").append("<span><label>"+data.parties[i].partyname+":</label></span><input type='text' id='"+data.parties[i].partyname+"' /><br>")
         }
         $("#upload-form").append("<button id='upload-result-btn' type='button' onclick='uploadResult()'>Upload</button>");
     })

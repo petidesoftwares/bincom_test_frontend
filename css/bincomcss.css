@@ -54,7 +54,7 @@ th{
     border: solid 1px darkslategray;
     border-collapse: collapse;
 }
-.upload-form label{
+.upload-form span{
     width: 25px;
     padding: 2%;
 }
