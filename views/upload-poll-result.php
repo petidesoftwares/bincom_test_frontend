@@ -1,7 +1,7 @@
 <html>
     <head>
         <script src="../javascripts/jquery.js"></script>
-        <script src="../javascripts/question3.js"></script>
+        <script src="../javascripts/question3Controller.js"></script>
         <link rel="stylesheet" href="../css/bincomcss.css">
     </head>
     <body>

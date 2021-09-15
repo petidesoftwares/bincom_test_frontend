@@ -54,3 +54,8 @@ th{
     border: solid 1px darkslategray;
     border-collapse: collapse;
 }
+input[type="text"]{
+    width: 60%;
+    font-size: large;
+    padding: 1%;
+}

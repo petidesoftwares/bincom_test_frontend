@@ -2,7 +2,6 @@
 const appUrl = "https://idepeter-bincom.herokuapp.com/";
 const indexArray =[];
 $(document).ready(function (){
-    // const namesArray = [];
     $.get(appUrl+'api/parties',function (data, status){
         for(let i=0; i<data.parties.length; i++){
             indexArray[i] = data.parties[i].partyname;
