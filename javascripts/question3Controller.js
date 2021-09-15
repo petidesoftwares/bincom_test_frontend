@@ -7,7 +7,7 @@ $(document).ready(function (){
             indexArray[i] = data.parties[i].partyname;
             $("#upload-form").append("<label>"+data.parties[i].partyname+":</label><input type='text' id='"+data.parties[i].partyname+"' /><br>")
         }
-        $("#upload-form").append("<button type='button' onclick='uploadResult()'>Upload</button>");
+        $("#upload-form").append("<button id='upload-result-btn' type='button' onclick='uploadResult()'>Upload</button>");
     })
 })
 
