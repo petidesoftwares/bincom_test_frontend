@@ -3,6 +3,17 @@
     font-size: x-large;
     cursor: pointer;
 }
+.span-link{
+    border: darkslategray;
+}
+a{
+    text-decoration: none;
+    text-underline: none;
+    color: white;
+}
+a:visited{
+    color: white;
+}
 table{
     border-collapse: collapse;
 }

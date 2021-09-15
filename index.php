@@ -7,8 +7,8 @@
 <body>
 <h2>BINCOM TEST</h2>
 <div id="states">
-    <span><a href="views/lga.php">Question 2>>></a></span><br>
-    <span><a href="views/upload-poll-result.php">Question 3>>></a></span><br>
+    <span class="span-link"><a href="views/lga.php">View LGA Result</a></span><br>
+    <span class="span-link"><a href="views/upload-poll-result.php">Upload Unit Result</a></span><br>
     <h4> Delta States Poll Result</h4>
     <ul id = "state-list"</ul>
 </div>
