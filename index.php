@@ -1,8 +1,8 @@
 <html>
 <head>
-    <link rel="stylesheet" href="css/bincomcss.css">
     <script src="javascripts/jquery.js"></script>
     <script src="javascripts/controller.js"></script>
+    <link rel="stylesheet" href="css/bincomcss.css">
 </head>
 <body>
 <h2>BINCOM TEST</h2>
