@@ -3,25 +3,28 @@
     <head>
         <script src="../javascripts/jquery.js"></script>
         <script src="../javascripts/question2Controller.js"></script>
+        <link rel="stylesheet" href="../css/bincomcss.css">
     </head>
     <body>
-        <div>
+        <div class="card-fluid">
             <div>
-                <select id="lga-by-state" onchange="getResult()">
-                    <option>Select LGA</option>
-                </select>
+                <div>
+                    <select id="lga-by-state" onchange="getResult()">
+                        <option>Select LGA</option>
+                    </select>
+                </div>
             </div>
-        </div>
-        <div id="result-table">
-            <table>
-                <thead>
-                    <th>Party</th>
-                    <th>Total Score</th>
-                </thead>
-                <tbody id="lga-result-body">
+            <div id="result-table">
+                <table>
+                    <thead>
+                        <th>Party</th>
+                        <th>Total Score</th>
+                    </thead>
+                    <tbody id="lga-result-body">
 
-                </tbody>
-            </table>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </body>
 </html>
