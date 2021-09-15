@@ -9,14 +9,15 @@
 <div class="card-fluid">
     <span class="span-link"><a href="views/lga.php">View LGA Result</a></span><br>
     <span class="span-link"><a href="views/upload-poll-result.php">Upload Unit Result</a></span><br>
-    <h4> Delta States Poll Result</h4>
+    <h3> Delta States Poll Result</h3>
 </div>
 <!--<div class="card" id="states">-->
 <!--    <h4> Delta States Poll Result</h4>-->
 <!--    <ul id = "state-list"</ul>-->
 <!--</div>-->
 <div class="card" id = "lgas">
-    <h4>Local Governments</h4>
+    <span>Select LGA >> ward >> unit</span>
+    <h3>Local Governments</h3>
     <ul id="lga-list"></ul>
 </div>
 <div class="card" id = "wards">

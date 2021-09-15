@@ -7,6 +7,7 @@
     </head>
     <body>
         <div class="card-fluid">
+            <h3>Total LGA Results</h3>
             <div>
                 <div>
                     <select id="lga-by-state" onchange="getResult()">
