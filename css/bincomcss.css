@@ -1,3 +1,8 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: darkslategray;
+}
 .li{
     list-style: none;
     font-size: x-large;
@@ -13,6 +18,14 @@ a{
 }
 a:visited{
     color: white;
+}
+.card{
+    width: 80%;
+    height: 500px;
+    margin-left: 9%;
+    padding: 2%;
+    background-color: antiquewhite;
+    border: solid 1px antiquewhite;
 }
 table{
     border-collapse: collapse;
