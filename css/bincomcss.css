@@ -2,3 +2,7 @@
     list-style: none;
     cursor: pointer;
 }
+#result-pane table, th,tr{
+    border-collapse: collapse;
+    border: solid 1px darkslategray;
+}

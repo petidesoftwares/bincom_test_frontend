@@ -47,7 +47,7 @@ function getPollingUnits(wardID){
     $.get(appUrl+'api/wards/pulling-units/'+wardID, function (data, status){
         for(let i = 0; i<data.units.length; i++){
             unitId = data.units[i].uniqueid;
-            $("#poll-list").append("<li onclick='getUnitResult("+unitId+")'>"+ data.units[i].polling_unit_name+"</li>");
+            $("#poll-list").append("<li class='li' onclick='getUnitResult("+unitId+")'>"+ data.units[i].polling_unit_name+"</li>");
         }
     })
 }
