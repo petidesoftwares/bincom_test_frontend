@@ -57,5 +57,7 @@ th{
 input[type="text"]{
     width: 60%;
     font-size: large;
-    padding: 1%;
+    margin: 1%;
+    margin-right: 2%;
+    padding: 0.5%;
 }
