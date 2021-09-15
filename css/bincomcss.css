@@ -21,7 +21,7 @@ a{
     color: darkblue;
 }
 a:visited{
-    color: white;
+    color: darkblue;
 }
 .card{
     width: 70%;
@@ -32,6 +32,7 @@ a:visited{
     padding: 2%;
     background-color: white;
     border: solid 1px white;
+    overflow: auto;
 }
 .card-fluid{
     width: 70%;
